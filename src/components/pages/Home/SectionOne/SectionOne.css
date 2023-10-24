@@ -1,0 +1,105 @@
+.sectionOne{
+    padding: 4%;
+    display: flex;
+    gap: max(30px,2vw);
+}
+.mainPhoto,.section-right{
+    width: 50%;
+}
+.mainPhoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+
+.photo{
+    content: url("../../../../assets/Home/SectionOne-photos/mainPhoto.png");
+    width: 90%;
+    border-radius:max(30px,5vw) 0 max(30px,5vw) 0 ;
+}
+.mainPhoto .ytIcon:hover{
+    cursor: pointer;
+}
+
+.ytIcon{
+    content: url("../../../../assets/Home/SectionOne-photos/yticon.png");
+    width: max(50px,3.6vw) ;
+    height: max(35px, 2.6vw) ;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.section-right{
+    display: flex;
+    flex-direction:column;
+    gap: max(10px, 3vw);
+}
+
+.heading h1{
+    font-family: "popmed"  !important;
+    font-size: max(25px,2vw);
+    width: 70%;
+}
+
+.text {
+    width: 80%;
+    font-size:max(14px,0.8vw) ;
+    line-height: 1.6;
+}
+.section-button {
+    background-color: var(--primary-color);
+    width: max(110px,8.1vw);
+    height: max(45px,2.6vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:max(7px,0.5vw) ;
+}
+.section-button a{
+    color: #ffffff;
+    font-size: max(14px,0.8vw );
+}
+
+@media (max-width:970px){
+    .sectionOne{
+        flex-direction: column;
+        gap: max(30px,2vw);
+    }
+    .photo{
+        width: 100%;
+      }
+    .mainPhoto,.section-right{
+        width: 100%;
+    }
+    .mainPhoto{
+        justify-content: center;
+        align-items: center;
+    }
+    .ytIcon{
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%,-50%);
+    }
+
+    .section-right{
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    .heading h1{
+        width: 100%;
+        text-align: center;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+  
+}
+

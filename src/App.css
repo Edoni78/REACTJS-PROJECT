@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  font-family: "popreg";
+}
+*{
+  margin: 0;
+}
+:root{
+  --primary-color:#D94645;
+  --background-color: #FDF2F2;
+  --footer-background:#1A1A1A;
+}
+
+@font-face {
+  font-family: "popmed";
+  src: url("./assets/fonts/Poppins-Medium.woff");
+}
+@font-face {
+  font-family: "popreg";
+  src: url("./assets/fonts/Poppins-Regular.woff");
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-family: "popmed";
+}
+p{
+  font-family: "popreg";
+}

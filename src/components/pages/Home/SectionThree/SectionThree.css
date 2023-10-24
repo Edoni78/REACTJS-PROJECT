@@ -1,0 +1,99 @@
+.sectionThree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: max(50px,3.8vw);
+    padding: 8% 4%;
+}
+.sectionThree-header h1{
+    font-family: "popmed";
+    font-size: max(25px,2.1vw);
+}
+.sectionThree-body{
+    display: flex;
+    gap: max(40px,3vw);
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+
+
+.sectionThree-card{
+    padding: 3% 2%;
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid #DADCE0;
+    border-radius: max(17px,1.6vw);
+    gap: max(15px,1.8vw);
+
+}
+
+.sectionThree-iconHolder{
+    width:max(25px,3vw) ;
+    height:max(25px,3vw) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -9%;
+    left: 9%;
+    background-color: #ffffff;
+   
+}
+
+
+.sectionThree-heading{
+    font-size: max(15px,0.9vw);
+    padding-left: max(10px,0.6vw);
+}
+.sectionThree-text {
+    font-size: max(15px,0.8vw);
+    padding-right: max(10px,0.3vw);
+    padding-bottom: max(15px, 3vw);
+}
+
+@media (max-width:920px){
+    .sectionThree-body{
+        flex-wrap: wrap;
+    }
+
+    .sectionThree-card{
+        width: 38%;
+    
+    }
+
+    .sectionThree-header{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:550px){
+    .sectionThree-card{
+        width: 80%;
+    
+    }
+
+    .sectionThree-header{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    .sectionThree-card{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .sectionThree-header{
+        width: 100%;
+        text-align: center;
+    }
+}

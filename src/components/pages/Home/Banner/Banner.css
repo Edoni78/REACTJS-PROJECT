@@ -1,0 +1,202 @@
+.banner{
+    padding:4%;
+    display: flex;
+    margin-top: max(90px,5.2vw) ;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content,.content-right{
+    width: 50%;
+}
+
+.content h1{
+    font-family: "popmed";
+    width: 70%;
+    margin: 0;
+    font-size: max(25px,2.25vw);
+}
+
+
+
+.content p{
+    width: 60%;
+    line-height: 1.7;
+    font-size: max(13px,1vw);
+}
+
+.banner-buttons .getStarted{
+    width: max(85px, 8.1vw);
+    background-color: var(--primary-color);
+    height: max(38px, 2.8vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: max(12px,0.8vw );
+}
+.banner-buttons{
+    display: flex;
+    align-items: center;
+    gap: max(7px, 0.4vw);
+}
+.banner-buttons .arrow-icon{
+    content: url("../../../../assets/Home/banner-photos/right\ arrow.png");
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    height: max(350px,32.5vw);
+    position: relative;
+    background-color: #FDF2F2;
+}
+.content-right h3{
+    font-family: "popmed" !important;
+}
+
+.content-right .content-right-img{
+    content: url("../../../../assets/Home/banner-photos/Mask\ Group\ 1.png");
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+}
+
+.learnEnglish{
+    position: absolute;
+    left: -10%;
+    bottom: 15%;
+}
+.learnGerman{
+    position: absolute;
+    bottom: 33%;
+    left: -2%;
+}
+.learnEnglish, .learnGerman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(150px, 13.6vw);
+    height: max(35px, 3.6vw);
+    font-size: max(13px, 1.25vw);
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.learnEnglish span{
+    content: url("../../../../assets/Home/banner-photos/USA.png");
+    position: absolute;
+    left: -17%;
+}
+.learnGerman span{
+    content: url("../../../../assets/Home/banner-photos/germany.png");
+    position: absolute;
+    left: -16%;
+}
+.learnEnglish span, .learnGerman span{
+    width: max(39px, 3.8vw);
+    height: max(39px, 3.8vw );
+}
+
+@media screen and (max-width:900px) {
+    .banner{
+       flex-direction: column;
+    }
+
+    .content,.content-right{
+        width: 80%;
+    }
+    .content h1{
+        width: 70%;
+      
+    }
+    .content p{
+        width: 60%;
+    }
+    
+
+    .learnEnglish{
+        position: absolute;
+        left: 0;
+        bottom: 15%;
+    }
+    .learnGerman{
+        position: absolute;
+        bottom: 33%;
+        left: 5%;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-right{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .learnEnglish{
+        position: absolute;
+        left: 4%;
+        bottom: 15%;
+    }
+    .learnGerman{
+        position: absolute;
+        bottom: 33%;
+        left: 10%;
+    }
+    .content h1, .content p{
+        width: 100%;
+      
+    }
+}
+
+@media screen and (max-width:500px) {
+    .learnEnglish{
+        position: absolute;
+        left: 3%;
+        bottom: 15%;
+    }
+    .learnGerman{
+        position: absolute;
+        bottom: 33%;
+        left: 10%;
+    }
+    .content h1, .content p{
+        width: 100%;
+      
+    }
+    .content,.content-right{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:390px) {
+    .learnEnglish{
+        position: absolute;
+        left: 4%;
+        bottom: 15%;
+    }
+    .learnGerman{
+        position: absolute;
+        bottom: 30%;
+        left: 12%;
+    }
+    .content h1, .content p{
+        width: 100%;
+        margin: 0;
+    }
+    .banner{
+        padding-top: 10%;
+    }
+}

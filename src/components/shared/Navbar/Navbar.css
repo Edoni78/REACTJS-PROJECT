@@ -1,0 +1,122 @@
+:root{
+    --primary-color:#D94645;
+}
+
+.navbar{
+    padding: 0 4%;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max(90px,5.2vw);
+    position: fixed;
+    background-color: white;
+    top: 0%;
+    left: 0%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-logo h1{
+    font-size: max(18px,1.4vw);
+    font-family: "popmed";
+}
+.nav-logo .logo{
+    content: url('../../../assets/Home/navbar-photo/navlogo.png');
+    width: max(30px, 2vw);
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+a{
+    color: #000000;
+    font-size: max(13px, 0.9vw);
+    font-family: "popreg";
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: max(15px,1vw);
+}
+.nav-right a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-right .nav-icon{
+    content: url("../../../assets/Home/navbar-photo/711897.png");
+    width: max(16px,1.2vw);
+}
+.nav-right .register{
+    background-color:var(--primary-color) ;
+    border-radius: 10px;
+    color: #ffffff;
+    width: max(80px, 5.5vw);
+    height: max(30px, 2.0vw);
+}
+
+.hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+
+}
+
+.line{
+    width: 30px;
+    height: 5px;
+    background-color: #000000;
+}
+
+
+@media screen and (max-width:1024px) {
+    .hamburger-menu{
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    .nav-links{
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        background-color: var(--primary-color);
+        border: 1px solid #ffffff;
+        align-items: center;
+    }
+
+    .nav-links a{
+        padding: 15px 20px;
+        border-bottom: 2px solid #ffffff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center ;
+        color: #ffffff;
+        font-family: "popreg";
+    }
+
+    .nav-links a:last-child{
+        border: none;
+    }
+
+    
+}
