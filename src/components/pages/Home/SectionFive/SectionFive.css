@@ -72,7 +72,8 @@
     }
 
     .sectionFive-wrapper{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding-top: 5%;
     }
 
     .sectionFive-photo{
@@ -96,7 +97,7 @@
     }
 
     .sectionFive-H1{
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
