@@ -54,10 +54,13 @@ const Navbar = () => {
             
           <div className="mob-nav">
                <div id="nav-links2">
-               <AiFillCloseCircle 
+
+             <div className="close-icon">
+             <AiFillCloseCircle 
             className="xxx" 
             onClick={() => setOpenNav(false)}
             />
+             </div>
             <Link to="/">Home</Link>
             <Link to="/">Company</Link>
             <Link to="/">Courses</Link>
@@ -65,7 +68,21 @@ const Navbar = () => {
             <Link to="/">Shop</Link>
             <Link to="/">Blog</Link>
             <Link to="/">Contact Us</Link>
+
+          
+            <div className="nav-right2">
+          <Link to="/" className="login">
+            Log In
+          </Link>
+          <Link to="/" className="register">
+            Register
+          </Link>
           </div>
+          
+          </div>
+
+        
+          
           </div>
        
         )}

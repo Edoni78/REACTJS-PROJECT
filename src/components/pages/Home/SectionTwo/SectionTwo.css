@@ -81,6 +81,9 @@
     .sectionTwoRight-photo{
         width: 80%;
     }
+    .sectionTwo{
+    padding: 4%;
+    }
 } 
 @media (max-width:535px){
     .sectionTwo-container{
