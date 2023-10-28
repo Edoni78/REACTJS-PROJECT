@@ -9,7 +9,6 @@
     z-index: 999 !important;
     display: flex;
     flex-direction: column;
-    position: fixed;
     background-color:#ECE3CE;
     align-items: center;
     top: 0;
@@ -142,6 +141,7 @@ a{
     z-index: 1;
     margin: 1% 0;
     color: #B3A492;
+    margin-top: 3% !important;
     
 }
 .line{
