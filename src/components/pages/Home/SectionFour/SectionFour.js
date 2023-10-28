@@ -5,44 +5,23 @@ const SectionFour = () => {
   return (
     <div>
       
-   <div className="sectionFour">
-    <div className="sectionFour-header">
-        <h1 className="sectionFour-h1">We are part of a initiative of the top educators around the word</h1>
-    </div>
-
-    <div className="sectionFour-content">
-        <div className="companies-one">
-            <div className="row1">
-                <div className="company-wrapper-onee">
-                    <div className="company company1"></div>
-                </div>
-                <div className="company-wrapper-two">
-                    <div className="company company2"></div>
-                </div>
-                <div className="company-wrapper-three">
-                    <div className="company company3"></div>
-                </div>
-                <div className="company-wrapper-four">
-                    <div className="company company4"></div>
-                </div>
-            </div>
+      <div className="section-four">
+        <div className="sfour-cup">
+            <h1 className="sf-header">We are part of a initiative of the top educators around the word</h1>
         </div>
+        <div className="sfour-cdown">
+            
+                    <div className="company1 company"></div>
+                    <div className="company2 company"></div>
+                    <div className="company3 company"></div>
+                    <div className="company4 company"></div>
 
-        <div className="companies-two">
-            <div className="row2">
-                <div className="company-wrapper">
-                    <div className="company company5"></div>
-                </div>
-                <div className="company-wrapper">
-                    <div className="company company6"></div>
-                </div>
-                <div className="company-wrapper">
-                    <div className="company company7"></div>
-                </div>
-            </div>
+                    <div className="company5 company"></div>
+                    <div className="company6 company"></div>
+                    <div className="company7 company"></div>
+                
         </div>
     </div>
-   </div>
     </div>
   )
 }

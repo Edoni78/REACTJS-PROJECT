@@ -9,7 +9,10 @@ const Navbar = () => {
 
   const handleNav = () => {
     setOpenNav(!openNav);
+  
   };
+
+
 
 
   return (
@@ -39,21 +42,22 @@ const Navbar = () => {
             Register
           </Link>
         </div>
-        <div className="hamburger-menu" onClick={handleNav}>
+        <div className="hamburger-menu"  onClick={handleNav}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
 
+
         {openNav && (
 
-            <div className="mob-nav">
-            {/* <AiFillCloseCircle 
+            
+          <div className="mob-nav">
+               <div id="nav-links2">
+               <AiFillCloseCircle 
             className="xxx" 
             onClick={() => setOpenNav(false)}
-            setOpenNav={setOpenNav}
-            /> */}
-               <div id="nav-links2">
+            />
             <Link to="/">Home</Link>
             <Link to="/">Company</Link>
             <Link to="/">Courses</Link>
@@ -62,7 +66,7 @@ const Navbar = () => {
             <Link to="/">Blog</Link>
             <Link to="/">Contact Us</Link>
           </div>
-            </div>
+          </div>
        
         )}
       </div>

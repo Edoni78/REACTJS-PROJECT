@@ -13,7 +13,8 @@
     position: fixed;
     background-color: var(--primary-color);
     align-items: center;
-    top: 90px;
+    top: 0;
+
 }
 #nav-links2 a{
     padding: 2% 0;
@@ -23,6 +24,7 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    font-size: 13px;
 }
 
 .navbar{
@@ -95,6 +97,17 @@ a{
 
 }
 
+
+.xxx{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    right: 0;
+    z-index: 1;
+    margin: 1% 0;
+    color: #ffffff;
+    
+}
 .line{
     width: 30px;
     height: 5px;
@@ -133,5 +146,7 @@ a{
     .nav-links{
         display: none;
     }
-    
+    #nav-links2 a{
+        font-size: 13px;
+    }
 }
